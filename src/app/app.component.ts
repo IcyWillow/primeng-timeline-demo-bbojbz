@@ -19,24 +19,28 @@ export class AppComponent {
         icon: PrimeIcons.SHOPPING_CART,
         color: '#9C27B0',
         image: 'game-controller.jpg',
+        class: 'from-me',
       },
       {
         name: 'Selena Baumann',
         date: '10.12.2022 18:32',
         icon: PrimeIcons.COG,
         color: '#673AB7',
+        class: 'from-me',
       },
       {
         name: 'Mirta Meier',
         date: '13.12.2022 10:22',
         icon: PrimeIcons.ENVELOPE,
         color: '#FF9800',
+        class: 'from-them',
       },
       {
         name: 'Mirta Meier',
         date: '15.12.2022 10:45',
         icon: PrimeIcons.CHECK,
         color: '#607D8B',
+        class: 'from-them',
       },
     ];
 

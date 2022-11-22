@@ -1,22 +1,24 @@
 <div class="card">
   <h5>Customized</h5>
-  <p-timeline [value]="events1" align="left" styleClass="customized-timeline">
+  <p-timeline [value]="events1" styleClass="customized-timeline">
     <ng-template pTemplate="" let-event>
       <span
         class="custom-marker p-shadow-2"
-        [style.backgroundColor]="event.color"
-      >
+        [style.backgroundColor]="event.color">
+			
         <i [ngClass]="event.icon"></i>
       </span>
     </ng-template>
     <ng-template pTemplate="content" let-event>
-      <p-card>
-        <label>{{ event.name }} - {{ event.date }}</label>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore
-          sed consequuntur error repudiandae numquam deserunt quisquam repellat.
-        </p>
-      </p-card>
+		<label class="comment" style=>{{ event.name }} - {{ event.date }}</label>
+        <div class="imessage">
+          <p class="{{event.class}}">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore
+            sed consequuntur error repudiandae numquam deserunt quisquam
+            repellat.
+          </p>
+        </div>
+ 
     </ng-template>
   </p-timeline>
 </div>
